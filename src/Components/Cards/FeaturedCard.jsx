@@ -10,10 +10,10 @@ const FeaturedCard = ({ app }) => {
         <figure className="pt-3 px-3">
           <img src={image} alt="Shoes" className="rounded-xl w-full" />
         </figure>
-        <div className="card-body items-center text-center">
+        <div className="p-3 items-center text-center">
           <h2 className="card-title">{companyName}</h2>
 
-          <div className="card-actions">
+          <div className="flex justify-between gap-5">
             <button className="btn bg-[#F1F5E8] text-[#00D390]">
               <img className="size-5" src={downloadIcon} alt="" /> {downloads}
             </button>
