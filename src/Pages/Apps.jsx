@@ -4,12 +4,15 @@ import FeaturedCard from "../Components/Cards/FeaturedCard";
 
 const Apps = () => {
   const { appData, loading } = useAppData();
-  console.log(appData);
+
   const [search, setSearch] = useState("");
   let term = search.trim().toLowerCase();
   const searchedApp = term
     ? appData.filter((app) => app.companyName.toLowerCase().includes(term))
     : appData;
+  if (loading) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <div className="container mx-auto">
       <h3 className="text-3xl text-center my-5">Our All Applications</h3>
@@ -32,6 +35,9 @@ const Apps = () => {
         {searchedApp.map((app) => (
           <FeaturedCard key={app.id} app={app}></FeaturedCard>
         ))}
+      </div>
+      <div className="flex mt-52 justify-center text-3xl font-bold">
+        {searchedApp.length == 0 && `No data found`}
       </div>
     </div>
   );
