@@ -2,16 +2,14 @@
 @plugin "daisyui";
 
 body {
-  @apply bg-[#D2D2D2]  mx-auto;
+  @apply bg-[#bdbaba1a]  mx-auto;
 }
 
 .gradient-purple {
   @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2];
 }
-:hover.text-gradient {
-  @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-transparent bg-clip-text;
-}
-.text-gradient {
+:hover.text-gradient,
+h1 span {
   @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-transparent bg-clip-text;
 }
 

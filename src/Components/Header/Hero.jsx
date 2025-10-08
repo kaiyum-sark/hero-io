@@ -1,7 +1,15 @@
 import React from "react";
 import googleImg from "../../assets/header/google.png";
 import appStoreImg from "../../assets/header/apple-store.png";
+import img1 from "../../assets/header/img1.png";
+import img2 from "../../assets/header/img2.png";
+import img3 from "../../assets/header/img3.png";
+import img4 from "../../assets/header/img4.png";
+import img5 from "../../assets/header/img5.png";
+import img6 from "../../assets/header/img6.png";
 
+import iphone from "../../assets/header/Iphone.png";
+import HeaderCard from "./HeaderCard";
 const Hero = () => {
   return (
     <div className="my-10">
@@ -24,7 +32,19 @@ const Hero = () => {
           App Store
         </button>
       </div>
-      <div></div>
+      {/* image section  */}
+      <div className="flex  text-center items-center justify-center mt-10 ">
+        <div className="relative hidden lg:block">
+          <img src={img1} alt="" className="absolute -left-32 top-20" />
+          <img src={img2} alt="" className="absolute -left-52 top-48" />
+          <img src={img3} alt="" className="absolute -left-60 top-80" />
+          <img src={iphone} alt="" />
+          <img src={img4} alt="" className="absolute -right-32 top-20" />
+          <img src={img5} alt="" className="absolute -right-52 top-48" />
+          <img src={img6} alt="" className="absolute -right-60 top-80" />
+        </div>
+      </div>
+      <HeaderCard></HeaderCard>
     </div>
   );
 };
