@@ -1,0 +1,362 @@
+[
+  {
+    "image": "https://picsum.photos/seed/app1/200",
+    "title": "TaskMaster Pro",
+    "companyName": "Skyline Labs",
+    "id": 1,
+    "description": "TaskMaster Pro is a next-generation productivity suite designed for teams and individuals alike. It helps you manage your projects, goals, and daily routines with AI-generated task priorities. Collaboration tools let users share boards, assign work, and track progress in real time. You can integrate it with your calendar and messaging apps for seamless workflow. Whether at home or office, TaskMaster Pro keeps your productivity at its peak.",
+    "size": 42,
+    "reviews": 1200,
+    "ratingAvg": 4.6,
+    "downloads": 850000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 550 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app2/200",
+    "title": "FitTrack",
+    "companyName": "WellBeing Corp",
+    "id": 2,
+    "description": "FitTrack is your personal fitness coach in your pocket. It automatically tracks steps, workouts, sleep, and calorie intake with precision sensors. The app’s AI engine creates personalized training plans based on your goals and fitness level. You can connect with friends to compete on leaderboards and share progress. FitTrack keeps you motivated every step of the way toward a healthier life.",
+    "size": 55,
+    "reviews": 2500,
+    "ratingAvg": 4.8,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1550 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app3/200",
+    "title": "PhotoBlend Studio",
+    "companyName": "PixelForge",
+    "id": 3,
+    "description": "PhotoBlend Studio offers professional-grade photo editing for everyone. You can merge photos, remove backgrounds, and apply cinematic filters instantly. AI-based retouching tools bring perfection to portraits and landscapes alike. The app supports RAW image editing and high-resolution exports. Whether for fun or business, PhotoBlend makes every image shine beautifully.",
+    "size": 87,
+    "reviews": 3100,
+    "ratingAvg": 4.3,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1200 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app4/200",
+    "title": "QuickBudget",
+    "companyName": "FinSync Ltd",
+    "id": 4,
+    "description": "QuickBudget helps you stay on top of your finances without effort. It automatically categorizes expenses and visualizes spending in clear charts. Smart insights help you understand where your money goes and how to save more. The app syncs securely across devices with bank-level encryption. Achieve financial peace of mind with QuickBudget’s intuitive control panel.",
+    "size": 33,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 760000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 160 },
+      { "name": "4 star", "count": 360 },
+      { "name": "5 star", "count": 450 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app5/200",
+    "title": "NoteMate",
+    "companyName": "Paperless Tech",
+    "id": 5,
+    "description": "NoteMate is designed for simplicity and productivity. It lets you take notes quickly using text, voice, or handwriting recognition. Notes sync instantly across your devices and stay organized in custom folders. You can attach images, PDFs, or checklists for rich documentation. With offline access, your ideas are always one tap away — anywhere you go.",
+    "size": 29,
+    "reviews": 900,
+    "ratingAvg": 4.2,
+    "downloads": 640000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 250 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app6/200",
+    "title": "GameHub Arena",
+    "companyName": "NexPlay Studios",
+    "id": 6,
+    "description": "GameHub Arena connects millions of gamers through live tournaments and leaderboards. Discover trending games and join global multiplayer events instantly. The app curates personalized recommendations based on your gaming style. Watch live streams and interact with pro players in real time. Whether casual or competitive, GameHub keeps your gaming world alive 24/7.",
+    "size": 120,
+    "reviews": 8000,
+    "ratingAvg": 4.5,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 1200 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app7/200",
+    "title": "CalmSpace",
+    "companyName": "MindWell Apps",
+    "id": 7,
+    "description": "CalmSpace helps users unwind through guided meditation and deep breathing exercises. Explore sessions designed to improve focus, reduce stress, and enhance sleep quality. You can personalize your mindfulness journey with soundscapes and progress tracking. Daily reminders encourage consistency and relaxation anywhere, anytime. Rediscover calmness with this beautifully crafted mental wellness app.",
+    "size": 48,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 930000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 750 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app8/200",
+    "title": "LangLeap",
+    "companyName": "EduSmart",
+    "id": 8,
+    "description": "LangLeap makes language learning immersive and fun through gamified lessons. You can practice pronunciation, grammar, and vocabulary interactively with AI tutors. The app supports over 30 languages and adjusts difficulty automatically. Track your progress and earn rewards as you master new words daily. LangLeap turns language learning into a joyful lifelong habit.",
+    "size": 77,
+    "reviews": 2200,
+    "ratingAvg": 4.6,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1150 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app9/200",
+    "title": "TravelNow",
+    "companyName": "FlyHigh Corp",
+    "id": 9,
+    "description": "TravelNow brings everything you need for seamless travel in one place. Plan trips, book hotels, and get live updates on flights with ease. Built-in maps and currency converters make your adventures smoother. You can save favorite destinations and manage itineraries offline. Travel smarter, safer, and more organized with TravelNow as your travel companion.",
+    "size": 64,
+    "reviews": 3500,
+    "ratingAvg": 4.5,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1850 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app10/200",
+    "title": "CookPal",
+    "companyName": "TastyWorks",
+    "id": 10,
+    "description": "CookPal is the ultimate kitchen assistant for food lovers. Discover thousands of recipes categorized by cuisine, diet, and difficulty. The app auto-generates grocery lists and adjusts portions easily. You can upload photos and share your creations with a friendly community. From beginners to chefs, CookPal makes every meal a masterpiece.",
+    "size": 58,
+    "reviews": 2800,
+    "ratingAvg": 4.3,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1450 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app11/200",
+    "title": "HealthSync",
+    "companyName": "BioTech Global",
+    "id": 11,
+    "description": "HealthSync integrates with your smartwatch to monitor your vital signs. It tracks heart rate, hydration, and daily activity levels in real time. Smart alerts notify you of irregularities or missed goals instantly. You can share reports securely with your doctor for better health tracking. HealthSync empowers you to take charge of your wellness journey effortlessly.",
+    "size": 72,
+    "reviews": 3200,
+    "ratingAvg": 4.6,
+    "downloads": 1600000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1940 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app12/200",
+    "title": "StudyWise",
+    "companyName": "LearnEra",
+    "id": 12,
+    "description": "StudyWise turns learning into a personalized, data-driven experience. Create study schedules and track progress with intelligent reminders. The app suggests video tutorials and quizzes for your weak topics. Built-in flashcards and note sync make studying more efficient. StudyWise helps students learn smarter, not harder, every single day.",
+    "size": 61,
+    "reviews": 2000,
+    "ratingAvg": 4.4,
+    "downloads": 1100000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app13/200",
+    "title": "ShopSmart",
+    "companyName": "EcomNext",
+    "id": 13,
+    "description": "ShopSmart redefines online shopping with AI-driven recommendations. It compares prices across stores to ensure you always get the best deal. The app tracks deliveries and alerts you about exclusive discounts. You can save wishlists and reorder items with one tap. ShopSmart is your go-to hub for smart, seamless shopping experiences.",
+    "size": 84,
+    "reviews": 4100,
+    "ratingAvg": 4.5,
+    "downloads": 3700000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 1700 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app14/200",
+    "title": "WorkConnect",
+    "companyName": "TeamBridge",
+    "id": 14,
+    "description": "WorkConnect keeps distributed teams connected and productive. You can host meetings, share screens, and manage tasks seamlessly. Integrated chat and file-sharing make remote collaboration easy. The app’s analytics show engagement and project health clearly. WorkConnect empowers teams to thrive from anywhere in the world.",
+    "size": 93,
+    "reviews": 3600,
+    "ratingAvg": 4.6,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 200 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 2050 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app15/200",
+    "title": "TimeCraft",
+    "companyName": "ChronoSoft",
+    "id": 15,
+    "description": "TimeCraft helps professionals reclaim time through intelligent scheduling. Automatically detect idle blocks and optimize your calendar layout. Integrate meetings, deadlines, and reminders all in one view. The app syncs across platforms to keep you punctual and stress-free. With TimeCraft, every minute counts toward better productivity.",
+    "size": 46,
+    "reviews": 1800,
+    "ratingAvg": 4.5,
+    "downloads": 970000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 240 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 850 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app16/200",
+    "title": "MusicFlow",
+    "companyName": "TuneMatrix",
+    "id": 16,
+    "description": "MusicFlow offers endless playlists crafted by AI for your mood. Discover trending artists, local sounds, and exclusive mixes daily. The app adapts to your listening behavior to recommend new favorites. Offline mode keeps your tunes going even without a connection. MusicFlow turns every moment into a perfectly tuned experience.",
+    "size": 105,
+    "reviews": 5200,
+    "ratingAvg": 4.7,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 220 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 3030 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app17/200",
+    "title": "SafeVault",
+    "companyName": "DataGuard Inc.",
+    "id": 17,
+    "description": "SafeVault secures your passwords, notes, and sensitive files with military-grade encryption. It generates strong, unique passwords for all your accounts. Auto-fill and biometric login make access simple yet safe. The app’s security insights warn you of data breaches instantly. Protect your digital identity confidently with SafeVault.",
+    "size": 38,
+    "reviews": 2300,
+    "ratingAvg": 4.8,
+    "downloads": 890000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app18/200",
+    "title": "EcoSteps",
+    "companyName": "GreenMind Labs",
+    "id": 18,
+    "description": "EcoSteps inspires sustainable living through eco-friendly challenges. Track your carbon footprint and earn badges for positive actions. Learn new habits that reduce waste, energy use, and emissions. The app connects you with communities focused on sustainability. Together, every step with EcoSteps makes a greener difference.",
+    "size": 52,
+    "reviews": 1900,
+    "ratingAvg": 4.4,
+    "downloads": 820000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 830 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app19/200",
+    "title": "MindSketch",
+    "companyName": "IdeaForge",
+    "id": 19,
+    "description": "MindSketch turns your thoughts into visual mind maps. Create brainstorming sessions and link ideas with drag-and-drop simplicity. The app offers templates for planning, journaling, and strategy mapping. Sync your sketches to the cloud and collaborate in real time. MindSketch makes thinking visual, organized, and endlessly creative.",
+    "size": 47,
+    "reviews": 1500,
+    "ratingAvg": 4.5,
+    "downloads": 740000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 690 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/app20/200",
+    "title": "Eventify",
+    "companyName": "SocialSync",
+    "id": 20,
+    "description": "Eventify helps you discover and manage events effortlessly. From concerts to webinars, it recommends experiences near you. Create your own events and share them with friends in one tap. Smart notifications ensure you never miss a show or meetup. Eventify makes connecting through live experiences simple and exciting.",
+    "size": 66,
+    "reviews": 2500,
+    "ratingAvg": 4.6,
+    "downloads": 1300000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 130 },
+      { "name": "3 star", "count": 280 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1390 }
+    ]
+  }
+]
