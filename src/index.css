@@ -10,7 +10,7 @@ body {
 }
 :hover.text-gradient,
 h1 span,
-.text-gradient {
+.text-pink {
   @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2]  text-transparent bg-clip-text;
 }
 

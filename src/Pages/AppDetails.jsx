@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import downloadIcon from "../assets/icon-downloads.png";
 import ratingsIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
+import { addAppData, getAppData } from "../Utilis/addtoDB";
+import { convertedNumber } from "../Utilis/convertedNumber";
 
 const AppDetails = () => {
   const location = useLocation();
-  console.log(location?.state);
+
   const {
     companyName,
     description,
@@ -19,6 +21,19 @@ const AppDetails = () => {
     size,
     title,
   } = location?.state || {};
+  const [installed, setInstalled] = useState(false);
+  useEffect(() => {
+    const storedApps = getAppData();
+    if (storedApps.includes(id)) {
+      setInstalled(true);
+    }
+  }, []);
+
+  const handleInstall = (id) => {
+    addAppData(id);
+    setInstalled(true);
+  };
+
   return (
     <div className="container mx-auto my-10">
       {/* top details card  */}
@@ -29,14 +44,16 @@ const AppDetails = () => {
             <h3 className="text-xl font-bold">{title}</h3>
             <p className="text-gray-400 ">
               Developed by{" "}
-              <span className="text-gradient font-bold">{companyName}</span>
+              <span className="text-pink font-bold">{companyName}</span>
             </p>
           </div>
           <div className="flex justify-start gap-3">
             <div className="my-5">
               <img src={downloadIcon} alt="" className="size-8" />
               <p className="text-gray-400">Downloads</p>
-              <p className="text-2xl font-bold ">{downloads}</p>
+              <p className="text-2xl font-bold ">
+                {convertedNumber(downloads)}
+              </p>
             </div>
             <div className="my-5">
               <img src={ratingsIcon} alt="" className="size-8" />
@@ -46,13 +63,29 @@ const AppDetails = () => {
             <div className="my-5">
               <img src={reviewIcon} alt="" className="size-8" />
               <p className="text-gray-400">Total Reviews</p>
-              <p className="text-2xl font-bold ">{reviews}</p>
+              <p className="text-2xl font-bold ">{convertedNumber(reviews)}</p>
             </div>
           </div>
-          <button className="btn w-fit bg-green-500 text-white font-bold">
-            Install Now ({size} MB)
+          <button
+            onClick={() => handleInstall(id)}
+            className={`btn w-fit ${
+              installed
+                ? " bg-[#FF8811] text-white font-bold"
+                : " bg-green-500 text-white font-bold hover:brightness-90"
+            }`}
+          >
+            {installed ? "Installed" : `Install Now (${size} MB)`}
           </button>
         </div>
+      </div>
+      {/* Recharts  */}
+      <div className="border-b-2 border-gray-300">
+        <h3> Review Charts</h3>
+      </div>
+      {/* Description  */}
+      <div>
+        <h3 className="font-semibold my-10">Description</h3>
+        <p className="text-gray-400">{description}</p>
       </div>
     </div>
   );
