@@ -5,6 +5,7 @@ import ratingsIcon from "../assets/icon-ratings.png";
 import reviewIcon from "../assets/icon-review.png";
 import { addAppData, getAppData } from "../Utilis/addtoDB";
 import { convertedNumber } from "../Utilis/convertedNumber";
+import Chart from "../Components/Chart";
 
 const AppDetails = () => {
   const location = useLocation();
@@ -81,6 +82,7 @@ const AppDetails = () => {
       {/* Recharts  */}
       <div className="border-b-2 border-gray-300">
         <h3> Review Charts</h3>
+        <Chart ratings={ratings}></Chart>
       </div>
       {/* Description  */}
       <div>

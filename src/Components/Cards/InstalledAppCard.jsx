@@ -5,7 +5,7 @@ import ratingsIcon from "../../assets/icon-ratings.png";
 import { removeAppData } from "../../Utilis/addtoDB";
 // import reviewIcon from "../assets/icon-review.png";
 const InstalledAppCard = ({ app, setAppList }) => {
-  const { id, title, image, ratingAvg, reviews, size, downloads } = app;
+  const { id, title, image, ratingAvg, size, downloads } = app;
 
   const handleRemove = (id) => {
     removeAppData(id);

@@ -16,15 +16,15 @@ const Installation = () => {
     setAppList(myAppList);
   }, [appData]);
 
-  const sortedItem = () => {
-    if (sortOrder === "size-max") {
+  const sortedItem = (() => {
+    if (sortOrder === "download-max") {
       return [...appList].sort((a, b) => a.size - b.size);
-    } else if (sortOrder === "size-min") {
+    } else if (sortOrder === "download-min") {
       return [...appList].sort((a, b) => b.size - a.size);
     } else {
       return appList;
     }
-  };
+  })();
 
   return (
     <div className="container mx-auto">
@@ -45,13 +45,13 @@ const Installation = () => {
             onChange={(e) => setSortOrder(e.target.value)}
           >
             <option value="none">Sort by Size</option>
-            <option value="size-max">Low-High</option>
-            <option value="size-min">High-Low</option>
+            <option value="download-max">Low-High</option>
+            <option value="download-min">High-Low</option>
           </select>
         </label>
       </div>
       <div className="grid grid-cols-1 gap-4">
-        {sortedItem().map((app) => (
+        {sortedItem.map((app) => (
           <InstalledAppCard
             key={app.id}
             app={app}
