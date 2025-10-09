@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getAppData } from "../Utilis/addtoDB";
 import useAppData from "../Hooks/useAppData";
 import InstalledAppCard from "../Components/Cards/InstalledAppCard";
+import { Bounce, ToastContainer } from "react-toastify";
 
 const Installation = () => {
   const [appList, setAppList] = useState([]);
@@ -51,6 +52,19 @@ const Installation = () => {
         </label>
       </div>
       <div className="grid grid-cols-1 gap-4">
+        <ToastContainer
+          position="top-center"
+          autoClose={1500}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+          transition={Bounce}
+        />
         {sortedItem.map((app) => (
           <InstalledAppCard
             key={app.id}

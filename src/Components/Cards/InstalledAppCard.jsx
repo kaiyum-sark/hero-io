@@ -3,14 +3,27 @@ import downloadIcon from "../../assets/icon-downloads.png";
 import { convertedNumber } from "../../Utilis/convertedNumber";
 import ratingsIcon from "../../assets/icon-ratings.png";
 import { removeAppData } from "../../Utilis/addtoDB";
-// import reviewIcon from "../assets/icon-review.png";
+import swal from "sweetalert";
+import { toast } from "react-toastify";
+
 const InstalledAppCard = ({ app, setAppList }) => {
   const { id, title, image, ratingAvg, size, downloads } = app;
 
   const handleRemove = (id) => {
-    removeAppData(id);
-    setAppList((prev) => prev.filter((app) => app.id !== id));
+    swal({
+      title: "Are you sure?",
+      text: `Are you sure that you want to uninstall  ${title}?`,
+      icon: "warning",
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        toast(`${title} is being removed`);
+        removeAppData(id);
+        setAppList((prev) => prev.filter((app) => app.id !== id));
+      }
+    });
   };
+
   return (
     <div className="flex flex-col md:flex-row justify-between bg-white p-2 rounded-sm shadow-lg items-center ">
       <div className="flex gap-3">
@@ -32,8 +45,9 @@ const InstalledAppCard = ({ app, setAppList }) => {
           </div>
         </div>
       </div>
+
       <button
-        className="bg-[#00D390] text-white font-semibold h-fit px-4 py-1 rounded-sm"
+        className="bg-[#00D390] hover:bg-[#00b67a] transition  text-white font-semibold h-fit px-4 py-1 rounded-sm"
         onClick={() => handleRemove(id)}
       >
         Uninstall

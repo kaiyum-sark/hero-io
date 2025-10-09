@@ -6,6 +6,7 @@ import reviewIcon from "../assets/icon-review.png";
 import { addAppData, getAppData } from "../Utilis/addtoDB";
 import { convertedNumber } from "../Utilis/convertedNumber";
 import Chart from "../Components/Chart";
+import swal from "sweetalert";
 
 const AppDetails = () => {
   const location = useLocation();
@@ -33,6 +34,15 @@ const AppDetails = () => {
   const handleInstall = (id) => {
     addAppData(id);
     setInstalled(true);
+    {
+      installed == false
+        ? swal({
+            title: "Good Job !",
+            text: " You have installed the app",
+            icon: "success",
+          })
+        : swal("Oops!", "The app is already installed", "error");
+    }
   };
 
   return (

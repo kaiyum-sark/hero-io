@@ -11,9 +11,7 @@ const getAppData = () => {
 
 const addAppData = (id) => {
   const storeAppData = getAppData();
-  if (storeAppData.includes(id)) {
-    alert("sorry");
-  } else {
+  if (!storeAppData.includes(id)) {
     storeAppData.push(id);
     const data = JSON.stringify(storeAppData);
     localStorage.setItem("apps", data);
