@@ -22,8 +22,9 @@ const addAppData = (id) => {
 
 const removeAppData = (id) => {
   const storeAppData = getAppData();
-  const updateData = storeAppData.filter((app) => app.id !== id);
-  localStorage.setItem("apps", JSON.stringify(updateData));
+  const updateData = storeAppData.filter((appId) => appId !== id);
+  const data = JSON.stringify(updateData);
+  localStorage.setItem("apps", data);
 };
 
 export { getAppData, addAppData, removeAppData };

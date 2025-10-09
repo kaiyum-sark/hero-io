@@ -1,17 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { getAppData } from "../Utilis/addtoDB";
 import useAppData from "../Hooks/useAppData";
+import InstalledAppCard from "../Components/Cards/InstalledAppCard";
 
 const Installation = () => {
   const [appList, setAppList] = useState([]);
+  const [sortOrder, setSortOrder] = useState("none");
 
   const { appData } = useAppData();
+
   useEffect(() => {
     const storedApp = getAppData();
     const convertedData = storedApp.map((id) => parseInt(id));
     const myAppList = appData.filter((app) => convertedData.includes(app.id));
     setAppList(myAppList);
   }, [appData]);
+
+  const sortedItem = () => {
+    if (sortOrder === "size-max") {
+      return [...appList].sort((a, b) => a.size - b.size);
+    } else if (sortOrder === "size-min") {
+      return [...appList].sort((a, b) => b.size - a.size);
+    } else {
+      return appList;
+    }
+  };
 
   return (
     <div className="container mx-auto">
@@ -21,27 +34,30 @@ const Installation = () => {
           Explore All Trending Apps on the Market developed by us
         </p>
       </div>
+
       <div className="flex justify-between items-center my-5">
         <h3 className="text-xl font-semibold">Apps Found</h3>
-        <div className="dropdown dropdown-start">
-          <div tabIndex={0} role="button" className="btn m-1">
-            Sort ⬇️
-          </div>
-          <ul
-            tabIndex={0}
-            className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+        {/* sort button  */}
+        <label className="form-control w-full max-w-xs">
+          <select
+            className="select "
+            value={sortOrder}
+            onChange={(e) => setSortOrder(e.target.value)}
           >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Item 2</a>
-            </li>
-          </ul>
-        </div>
+            <option value="none">Sort by Size</option>
+            <option value="size-max">Low-High</option>
+            <option value="size-min">High-Low</option>
+          </select>
+        </label>
       </div>
-      <div>
-        <span></span>
+      <div className="grid grid-cols-1 gap-4">
+        {sortedItem().map((app) => (
+          <InstalledAppCard
+            key={app.id}
+            app={app}
+            setAppList={setAppList}
+          ></InstalledAppCard>
+        ))}
       </div>
     </div>
   );
