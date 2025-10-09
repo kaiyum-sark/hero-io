@@ -91,12 +91,12 @@ const AppDetails = () => {
       </div>
       {/* Recharts  */}
       <div className="border-b-2 border-gray-300">
-        <h3> Review Charts</h3>
+        <h3 className="my-5 text-xl font-semibold"> Review Charts</h3>
         <Chart ratings={ratings}></Chart>
       </div>
       {/* Description  */}
       <div>
-        <h3 className="font-semibold my-10">Description</h3>
+        <h3 className="text-xl font-semibold my-10">Description</h3>
         <p className="text-gray-400">{description}</p>
       </div>
     </div>

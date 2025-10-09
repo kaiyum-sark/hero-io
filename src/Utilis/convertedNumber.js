@@ -1,6 +1,9 @@
 const convertedNumber = (num) => {
-  if (num >= 100000) {
-    let number = (num / 100000).toFixed() + "M";
+  if (num >= 1000000000) {
+    let number = (num / 1000000000).toFixed(1) + "B";
+    return number;
+  } else if (num >= 1000000) {
+    let number = (num / 1000000).toFixed() + "M";
     return number;
   } else if (num >= 1000) {
     let number = (num / 1000).toFixed() + "K";

@@ -5,6 +5,7 @@ import ratingsIcon from "../../assets/icon-ratings.png";
 import { removeAppData } from "../../Utilis/addtoDB";
 import swal from "sweetalert";
 import { toast } from "react-toastify";
+import { Link } from "react-router";
 
 const InstalledAppCard = ({ app, setAppList }) => {
   const { id, title, image, ratingAvg, size, downloads } = app;
@@ -39,15 +40,15 @@ const InstalledAppCard = ({ app, setAppList }) => {
             </div>
             <div className="flex items-center justify-start">
               <img src={ratingsIcon} alt="" className="max-h-4" />
-              <span className="font-bold text-green-600">{ratingAvg}</span>
+              <span className="font-bold text-[#FF8811]">{ratingAvg}</span>
             </div>
-            <span>{size}MB</span>
+            <span className="font-semibold text-gray-500">{size}MB</span>
           </div>
         </div>
       </div>
 
       <button
-        className="bg-[#00D390] hover:bg-[#00b67a] transition  text-white font-semibold h-fit px-4 py-1 rounded-sm"
+        className="bg-[#00D390] hover:bg-[#00b67a] transition  text-white font-semibold h-fit px-4 py-1 rounded-sm cursor-pointer"
         onClick={() => handleRemove(id)}
       >
         Uninstall

@@ -5,7 +5,7 @@ import { Link } from "react-router";
 import { convertedNumber } from "../../Utilis/convertedNumber";
 
 const FeaturedCard = ({ app }) => {
-  const { id, title, image, companyName, ratingAvg, downloads } = app;
+  const { id, title, image, ratingAvg, downloads } = app;
   return (
     <div>
       <Link to={`/apps/${id}`} state={app}>

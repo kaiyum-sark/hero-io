@@ -4,11 +4,13 @@ import useAppData from "../Hooks/useAppData";
 import InstalledAppCard from "../Components/Cards/InstalledAppCard";
 import { Bounce, ToastContainer } from "react-toastify";
 
+import Loader from "../Components/Loader";
+
 const Installation = () => {
   const [appList, setAppList] = useState([]);
   const [sortOrder, setSortOrder] = useState("none");
 
-  const { appData } = useAppData();
+  const { appData, loading } = useAppData();
 
   useEffect(() => {
     const storedApp = getAppData();
@@ -16,6 +18,10 @@ const Installation = () => {
     const myAppList = appData.filter((app) => convertedData.includes(app.id));
     setAppList(myAppList);
   }, [appData]);
+
+  if (loading) {
+    return <Loader />;
+  }
 
   const sortedItem = (() => {
     if (sortOrder === "download-max") {

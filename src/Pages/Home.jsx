@@ -3,9 +3,13 @@ import Hero from "../Components/Header/Hero";
 import useAppData from "../Hooks/useAppData";
 import FeaturedCard from "../Components/Cards/FeaturedCard";
 import { Link } from "react-router";
+import Loader from "../Components/Loader";
 
 const Home = () => {
-  const { appData } = useAppData();
+  const { appData, loading } = useAppData();
+  if (loading) {
+    return <Loader />;
+  }
 
   const featuredApp = appData.slice(0, 8);
 

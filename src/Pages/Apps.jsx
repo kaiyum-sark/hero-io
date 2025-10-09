@@ -1,18 +1,21 @@
 import React, { useState } from "react";
 import useAppData from "../Hooks/useAppData";
 import FeaturedCard from "../Components/Cards/FeaturedCard";
+import Loader from "../Components/Loader";
 
 const Apps = () => {
   const { appData, loading } = useAppData();
-
   const [search, setSearch] = useState("");
-  let term = search.trim().toLowerCase();
-  const searchedApp = term
-    ? appData.filter((app) => app.companyName.toLowerCase().includes(term))
-    : appData;
+
   if (loading) {
-    return <h1>Loading...</h1>;
+    return <Loader />;
   }
+
+  const term = search.trim().toLowerCase();
+  const searchedApp = term
+    ? appData.filter((app) => app.title.toLowerCase().includes(term))
+    : appData;
+
   return (
     <div className="container mx-auto">
       <h3 className="text-3xl text-center my-5">Our All Applications</h3>
@@ -36,9 +39,11 @@ const Apps = () => {
           <FeaturedCard key={app.id} app={app}></FeaturedCard>
         ))}
       </div>
-      <div className="flex mt-52 justify-center text-3xl font-bold">
-        {searchedApp.length == 0 && `No data found`}
-      </div>
+      {searchedApp.length == 0 && (
+        <div className="flex mt-52 justify-center text-3xl font-bold">
+          <h3>No Data Found</h3>
+        </div>
+      )}
     </div>
   );
 };
